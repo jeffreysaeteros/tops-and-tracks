@@ -1,0 +1,149 @@
+@font-face {
+    font-family: futura;
+    /* src: url(fonts/futura/Futura\ Book\ font.ttf); */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: futura;
+    text-transform: lowercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    color: white;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 600;
+    mix-blend-mode: difference;
+}
+
+.leftcol,
+.rightcol {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 15pt;
+    z-index: 0;
+}
+
+.leftcol {
+    background-color: black;
+    grid-column: 1;
+    /* color: black; */
+}
+
+.rightcol {
+    color: black;
+    mix-blend-mode: difference;
+    background-color: white;
+    grid-column: 2;
+    text-align: end;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: inherit;
+    color: white;
+    border: none;
+    font-size: 15pt;
+    cursor: url('images/cursor28.png'), auto !important;
+    mix-blend-mode: difference;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    padding-top: 2px;
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    width: 250px;
+    z-index: 1;
+    text-align: start;
+    font-size: 15pt;
+    mix-blend-mode: difference;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    margin: 20px 0;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: inherit;
+    cursor: url('images/cursor28hover.png'), auto !important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: inherit;
+}
+
+.rightcol a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* media query for color scheme */
+/* @media only screen and (prefers-color-scheme: dark) {
+    .leftcol {
+        background-color: black;
+    }
+
+    .rightcol {
+        background-color: white;
+    }
+
+    .rightcol a {
+        color: black;
+    }
+
+    .leftcol a{
+        color: black;
+    }
+
+    .dropdown a{
+        color: white;
+        text-decoration: none;
+    }
+} */
+
+
+/* ======================+++====================== */
+.dropdown a{
+    text-decoration: none;
+    color: white;
+}

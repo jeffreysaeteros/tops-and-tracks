@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info</title>
+
+    <link rel="stylesheet" href="user.css" />
+  </head>
+  <body>
+    <div class="transition transition-2 is-active"></div>
+
+    <div class="container">
+      <div class="header">
+        <a href="../tops/tops.html">tops</a>
+      </div>
+
+      <div id="userContainer">
+        <img id="userImage" class="userImage" src="" alt="" />
+        <img class="userImageTwo" src="" alt="" />
+        <img class="userImageThree" src="" alt="" />
+        <canvas id="c1"></canvas>
+        <canvas id="c2"></canvas>
+      </div>
+
+      <div id="buttonContainer">
+        <button class="track-button" id="button">
+          <span class="text">change pfp</span>
+        </button>
+        <div id="userInput col-3" class="userInput">
+          <input
+            name="query"
+            type="text"
+            placeholder="Enter Username or Spotify URL"
+            class="effect-10"
+            id="inputId"
+          />
+          <button class="track-button" type="button" onclick="getInputValue();">
+            <span class="text">submit</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="user.js"></script>
+  </body>
+</html>

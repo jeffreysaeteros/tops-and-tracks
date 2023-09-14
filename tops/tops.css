@@ -1,0 +1,87 @@
+@font-face {
+  font-family: futura;
+  /* src: url(fonts/futura/Futura\ Book\ font.ttf); */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: futura;
+  text-transform: lowercase;
+  font-size: 15pt;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background: black;
+  overflow: hidden;
+}
+
+.container{
+  z-index: 1;
+}
+
+.header {
+  color: white;
+  height: 10vh;
+  padding: 10px 20px;
+  font-size: 15pt;
+}
+
+.menu {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 10px 0;
+  width: fit-content;
+}
+
+.menu a:hover {
+  color: pink;
+}
+
+.transition-2 {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  bottom: 0;
+  z-index: 101;
+  background-color: white;
+  transition: 0.8s ease-in-out;
+}
+
+.transition-2.is-active {
+  right: 0px;
+}
+
+
+
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+p, a {
+color: white;
+}
+
+p {
+max-width: 30%;
+padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}

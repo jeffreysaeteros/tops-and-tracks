@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracks</title>
+
+    <link rel="stylesheet" href="tracks.css" />
+  </head>
+  <body>
+    <div class="transition transition-2 is-active"></div>
+
+    <div class="container">
+      <div class="rightcol">
+        <a href="../index.html">tracks</a>
+      </div>
+    </div>
+
+    <div id="inputcont">
+      <div class="col-3">
+        <input
+          id="inputVal"
+          class="effect-10"
+          type="text"
+          placeholder="Enter a track name"
+        />
+        <span class="focus-bg"></span>
+      </div>
+      <button class="track-button" role="button">
+        <span class="text">Get Track(s)</span>
+      </button>
+    </div>
+
+    <div id="track-choices" class="track-choices-display">
+      <div class="img1-cont">
+        <img class="imgStyles skill" id="img1" src="" alt="" />
+        <p id="img1-disc" class="exp"></p>
+      </div>
+
+      <div class="img1-cont">
+        <img class="imgStyles skill" id="img2" src="" alt="" />
+        <p id="img2-disc" class="exp">Text goes here</p>
+      </div>
+
+      <div class="img1-cont">
+        <img class="imgStyles skill" id="img3" src="" alt="" />
+        <p id="img3-disc" class="exp">Text goes here</p>
+      </div>
+    </div>
+
+    <div id="loader-container" class="loader-container">
+      <div class="spinner"></div>
+    </div>
+
+    <canvas id="canvas1" class="canvasDisplay"></canvas>
+    <button id="back-button" class="track-button" role="button">
+      <span class="text">return</span>
+    </button>
+    <audio src="" crossorigin="anonymous"></audio>
+
+    <script src="tracks.js"></script>
+  </body>
+</html>
